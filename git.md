@@ -7,6 +7,7 @@
 | git co        | ```git config --global alias.co checkoutdfklgjd;lfkg;sdfkgs;dlkfgjs;dlkfgj;sdklfjg;sldkfj;lsdkfg;lsdkfjglkjs;d``` |
 | git st        | ```git config --global alias.st status``` |
 | git br        | ```git config --global alias.br branch``` |
+| git dim       | ```git config --global alias.dim "diff --diff-filter=M"``` |
                   
                 
                   
