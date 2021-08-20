@@ -1,0 +1,166 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+
+'.source.coffee':
+  'Console log':
+    'prefix': 'lo'
+    'body': """
+      console.group "%c Custom log:", "background: #00A9A5; color: #00D5DB; font-size: 16px;"
+      console.log $1
+      console.groupEnd()
+    """
+  'When apply':
+    'prefix': 'w'
+    'body': """
+      $.when.apply($, $1).done =>
+    """
+
+'.source.ruby':
+  'Pretty generate':
+    'prefix': 'pg'
+    'body': "JSON.pretty_generate($1)"
+  'Puts':
+    'prefix': 'p'
+    'body': "puts($1)"
+  'Inspect':
+    'prefix': 'i'
+    'body': "$1.inspect"
+  'Tripple puts':
+    'prefix': 'ppp'
+    'body': """
+      puts "=" * 50
+      p $1
+      puts "=" * 50
+    """
+    
+'.source.ts':
+  'Console log':
+    'prefix': 'lo'
+    'body': """
+      console.group("%c Custom log:", "background: lightgreen; color: orange; font-size: 16px;");
+      console.log($1);
+      console.groupEnd();
+    """
+  'Console log wrapped with equals':
+    'prefix': 'elo'
+    'body': """
+      console.log("========================================");
+      console.log($1);
+      console.log("========================================");
+    """
+'.source.tsx':
+  'Console log':
+    'prefix': 'lo'
+    'body': """
+      console.group("%c Custom log:", "background: lightgreen; color: orange; font-size: 16px;");
+      console.log($1);
+      console.groupEnd();
+    """
+  'Console log wrapped with equals':
+    'prefix': 'elo'
+    'body': """
+      console.log("========================================");
+      console.log($1);
+      console.log("========================================");
+    """
+  'Class for react':
+    'prefix': 'clr'
+    'body': """
+      interface Props {
+        className?: string;
+      }
+
+      class $1 extends React.Component<Props> {
+        
+        constructor(props: Props) {
+          super(props)
+        }
+        
+        render(): JSX.Element {
+          return (
+          );
+        }
+      }
+
+      export default $1;
+    """
+    
+
+'.source.html.erb':
+  'print':
+    'prefix': 'pr'
+    'body': "<%= $1 %>"
+  'if':
+    'prefix': 'if'
+    'body': """
+      <% if $1 %>"
+        $2
+      <% else %>"
+      <% end %>"
+    """
+  'each':
+    'prefix': 'e'
+    'body': """
+      <% $1.each do |$2| %>"
+        $3
+      <% end %>"
+    """
+    
+'.source.js':
+  'Console log':
+    'prefix': 'lo'
+    'body': """
+      console.group("%c Custom log:", "background: lightgreen; color: orange; font-size: 16px;");
+      console.log($1);
+      console.groupEnd();
+    """
+  'Console log wrapped with equals':
+    'prefix': 'elo'
+    'body': """
+      console.log("========================================");
+      console.log($1);
+      console.log("========================================");
+    """
+  'Eslint disable next line':
+    'prefix': 'esd'
+    'body': """
+      // eslint-disable-next-line $1
+    """
+  'Class for react':
+    'prefix': 'clr'
+    'body': """
+      import React from 'react';
+      
+      class $1 extends React.Component {
+        
+        constructor(props) {
+          super(props)
+        }
+        
+        render() {
+          return <>$1</>;
+        }
+      }
+
+      export default $1;
+    """

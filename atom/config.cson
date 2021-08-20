@@ -1,0 +1,80 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "1d07393c-aafe-4d35-96e2-ccdf861c19f6"
+  "atom-typescript":
+    autocompletionSuggestionPriority: 1
+    occurrenceHighlightDebounceTimeout: 3e+21
+    preferBuiltinBusySignal: true
+    preferBuiltinSigHelp: true
+    preferBuiltinTooltips: true
+    sigHelpDisplayOnChange: false
+    sigHelpPosition: "bottom"
+  autosave:
+    enabled: true
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
+  core:
+    audioBeep: false
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "github"
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-go"
+      "spell-check"
+      "language-graph"
+      "ruby-slim"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  editor:
+    fontSize: 15
+    lineHeight: 1.6
+    showIndentGuide: true
+    softTabs: false
+    tabType: "soft"
+  "exception-reporting":
+    userId: "bd673782-0ff6-44a9-be87-e9b0f36bff02"
+  "ide-typescript":
+    autocompleteResultsFirst: false
+  "linter-eslint":
+    advanced:
+      disableFSCache: true
+    autofix:
+      fixOnSave: true
+    disabling: {}
+    global:
+      useGlobalEslint: true
+    scopes: [
+      "source.js"
+      "source.jsx"
+      "source.js.jsx"
+      "source.flow"
+      "source.babel"
+      "source.js-semantic"
+      "source.ts"
+      "source.tsx"
+    ]
+  "linter-ui-default":
+    panelHeight: 300
+  "markdown-preview": {}
+  "one-dark-ui":
+    fontSize: 15
+  "one-light-ui":
+    fontSize: 15
+    tabSizing: "Minimum"
+  "tree-view":
+    alwaysOpenExisting: true
+    focusOnReveal: false
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnlyLines: true
+".basic.html.text":
+  editor:
+    tabType: "soft"
