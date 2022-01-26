@@ -7,7 +7,7 @@
 | git co        | ```git config --global alias.co checkout``` |
 | git st        | ```git config --global alias.st status``` |
 | git br        | ```git config --global alias.br branch``` |
-| git dim       | ```it config --global alias.dim 'diff --diff-filter=M -- . ":!package-lock.json"'``` |
+| git dim       | ```git config --global alias.dim 'diff --diff-filter=M -- . ":!package-lock.json"'``` |
                   
                 
                   
