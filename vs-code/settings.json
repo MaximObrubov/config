@@ -1,0 +1,32 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.lineHeight": 2.0,
+    "terminal.integrated.fontFamily": "'Courier New', monospace",
+    "terminal.integrated.lineHeight": 1.4,
+    "workbench.tree.indent": 15,
+    "editor.fontFamily": "'Courier New', monospace",
+    "workbench.colorTheme": "Monokai",
+    "explorer.confirmDelete": false,
+    "editor.tabSize": 2,
+    "explorer.compactFolders": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "redhat.telemetry.enabled": true,
+    "emmet.includeLanguages": {"erb": "html"},
+    "files.associations": {
+        "*.erb": "html"
+    },
+    "workbench.editor.tabSizing": "shrink",
+    "window.zoomLevel": 1,
+    "editor.tokenColorCustomizations": {
+        "[Monokai]": {
+            "textMateRules": [
+                {
+                    "scope": "entity.name.type, entity.name.class, entity.name.namespace, entity.name.scope-resolution",
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+            ]
+        }
+    }
+}

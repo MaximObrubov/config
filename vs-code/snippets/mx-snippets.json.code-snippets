@@ -1,0 +1,59 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Print log to browser": {
+		"scope": "javascript,typescript",
+		"prefix": "lo",
+		"body": [
+      "console.group('%c Custom log:', 'background: #00A9A5; color: #00D5DB; font-size: 16px;')",
+      "console.log($1)",
+      "console.groupEnd()",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"Print log to terminal": {
+		"scope": "javascript,typescript",
+		"prefix": "elo",
+		"body": [
+      "console.log('===================================================')",
+      "console.log($1)",
+      "console.log('===================================================')",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"Print puts to terminal": {
+		"scope": "ruby",
+		"prefix": "pp",
+		"body": [
+      "puts('===================================================')",
+      "puts $1.inspect",
+      "puts('===================================================')",
+		],
+		"description": "Log value"
+	},
+	"for in erb": {
+		"scope": "html",
+		"prefix": "ff",
+		"body": [
+      "<%= $1.each do |$2| %>",
+      "$3",
+      "<%end%>",
+		],
+		"description": "loop through"
+	},
+	"print erb": {
+		"scope": "html",
+		"prefix": "pp",
+		"body": [
+      "<%= $1 %>"
+		],
+		"description": "loop through"
+	}
+}
